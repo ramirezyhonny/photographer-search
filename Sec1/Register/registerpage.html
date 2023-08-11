@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Sec1/Register/style_register.css">
+    <title>Register</title>
+</head>
+<body>
+    <main>
+        <section id="container_register">
+            <h1>Register form</h1>
+            <div class="select_usertype">
+                <h2>Please choose your profile type</h2>
+                <form id="form_user_type">
+                    <select name="User type" id="type_user">
+                        <option value="client">Client</option>
+                        <option value="ph">Photographer</option>
+                    </select>
+                    <input type="submit" id="submit_type_user" value="Ok">
+                </form>
+            </div>
+            <div id="form_principal" style="display: none;">
+                <form id="form_principal_client" style="display: none;">
+                    <fieldset>
+                        <legend>I'm a Client</legend>
+                        <div class="inform">
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" required placeholder="Complete name...">
+                        </div>
+                        <div class="inform">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" required placeholder="Your email...">
+                        </div>
+                        <div class="inform">
+                            <label for="phone_number">Phone number: </label>
+                            <input type="text" required placeholder="Your phone...">
+                        </div>
+                        <div class="inform">
+                            <label for="password">Creat password: </label>
+                            <input type="password" required placeholder="Password...">
+                        </div>
+                        <input type="submit" value="Sign me up" id="button_sing_me_cli">    
+                    </fieldset>
+                </form>
+                <form id="form_principal_photographer" style="display: none;">
+                    <fieldset>
+                        <legend>I'm a Photographer</legend>
+                        <div class="inform">
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" required placeholder="Complete name...">
+                        </div>
+                        <div class="inform">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" required placeholder="Your email...">
+                        </div>
+                        <div class="inform">
+                            <label for="briefcase">Briefcase: </label>
+                            <input type="file" id="briefcase" required>
+                        </div>
+                        <div class="inform">
+                            <label for="specialization">Specialization: </label>
+                            <select name="specialization" id="specialization">
+                                <option value="portPho">Portrait Photography</option>
+                                <option value="wepho">Wedding Photography</option>
+                                <option value="evpho">Event Photography</option>
+                                <option value="landspho">Landscape Photography</option>
+                                <option value="napho">Nature Photography</option>
+                                <option value="propho">Product Photography</option>
+                                <option value="arqpho">Architectural Photography</option>
+                                <option value="foodpho">Food Photography</option>
+                                <option value="sportpho">Sports Photography</option>
+                                <option value="docupho">Documentary Photography</option>
+                                <option value="fashionpho">Fashion Photography</option>
+                                <option value="travelpho">Travel Photography</option>
+                                <option value="petpho">Pet Photography</option>
+                                <option value="several">Select several</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="inform">
+                            <label for="experience">Experience: </label>
+                            <input type="number" min="0" max="100" required placeholder="years" id="experience">
+                        </div>
+                        <div class="inform">
+                            <label for="password">Creat password: </label>
+                            <input type="password" required placeholder="Password...">
+                        </div>
+                        <input type="submit" value="Sign me up" id="button_sing_me_pho">    
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="/Sec1/Register/scripregister.js"></script>
+</body>
+</html>         

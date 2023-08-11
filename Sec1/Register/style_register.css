@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --principal-color1:#730cdb;
+    --pricipal-color2:#a900ad;
+    --principal-color3:#fff;
+    --principal-color4:#000;
+}
+body{
+    background-image:url(/Sec1/Register/imagess/2560px/notebook/img2.wallspic.com-negro-madera-textura-simetria-el_arte_abstracto-3840x2160.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+/*container*/
+#container_register{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 80px auto 80px;
+    height: auto;
+    max-width: 900px;
+    background-color: #000;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: var(--principal-color3);
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+/*Selection*/
+h2{
+    color: var(--principal-color3);
+}
+.select_usertype{
+    text-align: center;
+    border: 1px solid #000;
+}
+#submit_type_user{
+    width: 25px;
+}
+/*general input*/
+input{
+    max-width: 200px;
+}
+input::placeholder{
+    padding-left: 5px;
+}
+#form_principal input{
+    border-radius: 5px;
+}
+/*principal form*/
+#form_principal{
+    margin-top: 40px;
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*Form Client*/
+#form_principal_client{
+    padding: 10px;
+}
+#form_principal_client legend{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+#form_principal_client fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #fff;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: var(--principal-color1);
+}   
+.inform{
+    display: flex;
+    justify-content: space-between;
+}
+/*Form Photographer*/
+#specialization{
+    width: 163px;
+    font-size: 10px;
+}
+#specialization:focus{
+    outline: none;
+    border: 1px solid var(--pricipal-color2);
+}
+/*inputs type submit*/
+#form_principal_photographer{
+    padding: 10px;
+}
+#form_principal_photographer fieldset{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: var(--pricipal-color2);
+}
+#form_principal_photographer input:focus{
+    outline: none;
+    border: 2px solid var(--pricipal-color2);
+}
+#form_principal_client input:focus{
+    outline: none;
+    border: 2px solid var(--principal-color1);
+}
+#form_principal_photographer legend{
+    text-align: center;
+    font-size: 30px;
+}
+#experience{
+    width: 162px;
+}
+#button_sing_me_cli{
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--principal-color1);
+    color: var(--principal-color3);
+    transition: 300ms;
+    text-align: center;
+    height: 40px;
+}
+#button_sing_me_cli:hover{
+    cursor: pointer;
+    scale: 1.05;
+    background-color: var(--principal-color4);
+    color: var(--principal-color1);
+    border: 1px solid var(--principal-color1);
+}
+#button_sing_me_pho{
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--pricipal-color2);
+    color: var(--principal-color3);
+    transition: 300ms;
+    text-align: center;
+    height: 40px;
+}
+#button_sing_me_pho:hover{
+    cursor: pointer;
+    scale: 1.05;
+    background-color: var(--principal-color4);
+    color: var(--pricipal-color2);
+    border: 1px solid var(--pricipal-color2);
+}
+/*media querys*/
+@media only screen and (max-width:1439px){
+    body{
+        background-image: url(/Sec1/Register/imagess/2560px/mobile/mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #container_register{
+        width: 80%;
+    }
+    /*Form*/
+    #form_principal{
+        scale: 0.9;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 2.5vw;
+    }
+    /*genral input*/
+    input{
+        max-width: 80px;
+    }
+    input::placeholder{
+        font-size: 2.5vw;
+    }
+    /*Form photographer*/
+    #form_principal_photographer{
+        border:none;
+    }
+    #form_principal_photographer legend{
+        font-size: 5vw;
+    }
+    #specialization{
+        width: 100px;
+        font-size: 3vw;
+    }
+    /*Form client*/
+    #form_principal_client{
+        border: none;
+    }
+    #form_principal_client legend{
+        font-size: 5vw;
+    }
+}
+@media only screen and (min-width:2560px){
+    body{
+        background-image: url(/Sec1/Register/imagess/2560px/full1.jpg);
+        background-size: cover;
+    }
+    #container_register{
+        scale: 2;
+        margin-top: 500px;
+    }
+}

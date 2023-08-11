@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Sec1/style1.css">
+    <title>PhotographerSearch</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="/Sec1/Images/My project-1.png" alt="icon" class="icon_page">
+            <ul class="navbar_list">
+                <li><a href="#" class="navbar_list_link" id="login_link">Login</a></li>
+                <li><a href="#who_we_are" class="navbar_list_link">Who we are?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="container_principal">
+            <section id="presentation">
+                <div class="text_principal">
+                    <h2 class="welcome_this_page">Welcome to</h2>
+                    <span class="span1">Photographer Search</span>
+                </div>
+            </section>
+            <section id="who_we_are">
+                <h2>Who we are?</h2>
+                <p>We are an innovative company that wants to help by creating the Photographer Recruitment 
+                system which is an online platform designed to facilitate
+                the process of contracting photographic services. This system gives users the ability to
+                search, evaluate and hire professional photographers efficiently and conveniently.</p>
+            </section>
+            <section id="login" style="display: none;">
+                <div class="container_login">
+                    <nav id="navbar_login"><button id="button_close"><img src="/Sec1/Images/close-square-svgrepo-com.svg" alt="icon_close" class="icon_close"></button></nav>
+                    <div class="content_form_total">
+                        <div class="login_cont">
+                            <form id="login_form">
+                                <fieldset>
+                                    <legend>Login</legend>
+                                    <h2 class="welcome">Welcome Back</h2>
+                                    <div class="form_user">
+                                        <label for="user">Email: </label>
+                                        <input type="email" id="user" placeholder="Email..." required>
+                                    </div>
+                                    <div class="form_user">
+                                        <label for="password">Password: </label>
+                                        <input type="password" id="password" placeholder="Password..." required>
+                                    </div>
+                                    <section class="extra">
+                                        <div class="remember">
+                                            <input type="checkbox" name="1" id="remember"> Remember me
+                                        </div>
+                                        <div class="forgot">
+                                            <a href="#" class="forgot_password">Forgot Password?</a>
+                                        </div>
+                                    </section>
+                                    <input type="submit" value="Log In" class="submit_bottom">
+                                    <div class="not_account">
+                                        <p>Don't have account? <a href="/Sec1/Register/registerpage.html" id="sing_up_link">Sing up</a></p>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="sing_up">
+                            <h2>Join us for Best Experience</h2>
+                            <div class="img_and_text">
+                                <img src="/Sec1/Images/imglogin.png" alt=""class="camera_pic">
+                                <div class="button_and_text">
+                                    <p> Register now and access talented
+                                        photographers, personalized quotes, ratings and comments from other users, and
+                                        the ease of booking sessions online.</p>
+                                    <button class="sing" id="sing_up_link_buttom">Sing Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>This website is reserved for copyright</p>
+    </footer>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <script src="/Sec1/scrip1.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Client/styleCli.css">
+    <title>PHO</title>
+</head>
+<body id="body">
+    <header>
+        <nav id="navbar">
+            <img src="/Sec1/Images/My project-1.png" alt="log" width="100px">
+            <ul class="navbar_list">
+                <li><a href="#" class="navbar_list_link">Home</a></li>
+                <li><a href="#" class="navbar_list_link">My reservations</a></li>
+                <li><a href="#what_it_this" class="navbar_list_link">What it this?</a></li>
+                <li><a href="#" class="navbar_list_link" id="myperfil">My perfil</a></li>
+            </ul>
+            <button id="menuresp_button">
+                <img src="/Client/images/menu-svgrepo-com (1).svg" alt="">
+            </button>
+            <ul id="navrespon">
+                <button id="cancel_navres">x</button>
+                <li><a href="#" class="navbar_list_link">Home</a></li>
+                <li><a href="#" class="navbar_list_link">My reservations</a></li>
+                <li><a href="#what_it_this" class="navbar_list_link">What it this?</a></li>
+                <li><a href="#" class="navbar_list_link" id="myperfil_res">My perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="container">
+            <div class="container_search">
+                <h1 id="title_search">Let's look for</h1>
+                <form id="search-form">
+                    <input type="search" id="search_input" placeholder="Searching...">
+                    <button id="submit_search"><img src="/Client/images/search-svgrepo-com (1).svg" alt="pic_search" class="image_search"></button>
+                </form>
+            </div>
+            <div id="what_it_this">
+                <div class="presentation">
+                    <h2 class="what_it_this_title">Phootographer Search</h2>
+                    <p class="description">Our website is a digital destination dedicated to providing you with an exceptional 
+                        photographic experience. You will find a wide selection of talented photographers specializing in capturing 
+                        precious moments and authentic emotions. Our platform allows you to request personalized quotes, read ratings 
+                        and comments from other users, and book easily online sessions. We offer you a unique and memorable photographic 
+                        experience, all in one place. Join us and discover the art of capturing unforgettable moments!
+                    </p>
+                </div>
+                <div class="objetives">
+                    <h2 class="objetives_title">Objetives</h2>
+                    <div class="container_obj">
+                        <div class="obj">
+                                <h2>Connect users with talented photographers</h2>
+                                <p class="obj_text_paragraph" id="objP">The main objective of our website is to establish a bridge between users who are 
+                                    looking for exceptional photographic services and photographers with outstanding skills and experience. 
+                                    We want to facilitate the search and selection process, so that users can find the perfect photographer 
+                                    for their needs and preferences.
+                                </p>
+                        </div>
+                        <div class="obj">
+                                <h2>Facilitate online request for quotes and reservations</h2>
+                                <p class="obj_text_paragraph" id="objP">We want our users to have the convenience of requesting personalized quotes for 
+                                    their photographic projects directly through our platform. In addition, they will be able to make online 
+                                    reservations quickly and easily, saving time and effort.
+                                </p>
+                        </div>
+                        <div class="obj" >
+                                <h2>Provide valuable information through ratings and comments</h2>
+                                <p class="obj_text_paragraph" id="objP">We understand how important
+                                    it is for users to have references and testimonials from other people before making a decision. That's why we allow 
+                                    users to rate and leave comments on photographers they've worked with, thus providing valuable feedback for future clients.
+                                </p>
+                        </div>
+                        <div class="obj" >
+                                <h2>Offer a unique and memorable photographic experience</h2>
+                                <p class="obj_text_paragraph" id="objP"> We want each user who visits our website to enjoy an exceptional photographic experience. 
+                                    From exploring photographers' portfolios to hiring their services, we seek to make every step enjoyable and satisfying.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linkline">
+                <a href="#navbar"><img src="/Client/images/top-svgrepo-com.svg" alt="pic top" class="img_line_top"></a>
+            </div>
+        </section>
+        <section id="hidden" class="hi">
+            <div class="close_button_hidden">
+                <button id="but_clo_hi">x</button>
+            </div>
+            <div class="content">
+                <div class="imglog">
+                    <img src="/Client/images/user-circle-svgrepo-com.svg" alt="">
+                </div>
+                <h2 id="name_user">Yhonny Ramirez Condori</h2>
+                <div class="selectfont_container">
+                    <button id="button_font" class="button_font">Select theme</button>
+                    <div id="cont_election" style="display: none;">
+                        <div class="closelinkfont"><a href="#" id="closeLinkFont">Close</a></div>
+                        <div class="typefont">
+                            <div class="font"><a href="#" id="dark_span">Dark</a></div>
+                            <div class="font"><a href="#" id="light_span">Light</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>This page is realizated by a student from Argentina</p>
+    </footer>
+    <script src="/Client/scriptCient.js"></script>
+</body>
+</html>

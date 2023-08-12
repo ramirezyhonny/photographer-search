@@ -4,26 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
-
+html{scroll-behavior: smooth;}
 :root{
     --principal-color1:#730cdb;
     --pricipal-color2:#a900ad;
     --principal-color3:#fff;
     --principal-color4:#000;
     --transparent-hidden:rgba(55, 53, 56, 0.504);
+    --transparent-hidden-dark:rgba(114, 112, 115, 0.504);
 }
-#body{
-    font-family: 'Open Sans', sans-serif;
-}
-#body.dark{
-    background-color: var(--principal-color4);
-}
-#body.light{
-    background-color: var(--principal-color3);
-}
+#body{font-family: 'Open Sans', sans-serif;}
+#body.dark{background-color: var(--principal-color4);}
+#body.light{background-color: var(--principal-color3);}
+    
+
 #navbar{
     background-color: var(--principal-color4);
     display: flex;
@@ -51,12 +45,15 @@ html{
     border-radius: 50% 0 0 50%;
 }
 #navrespon li:hover{
-    background-color: #fff;
+    background-color: var(--principal-color3);
 }
 #menuresp_button{
     display: none;
     border: none;
     background-color: transparent;
+}
+#cancel_navres{
+    width: 30px;
 }
 #menuresp_button img{
     width: 65px;
@@ -134,6 +131,9 @@ button{cursor: pointer;}
     margin-top: 150px;
     width: 100%;
 }
+#presentation{
+    color:var(--principal-color4);
+}
 .presentation{
     display: flex;
     flex-direction: column;
@@ -142,6 +142,7 @@ button{cursor: pointer;}
 .presentation h2{
     text-align: center;
     font-size: 40px;
+    color: var(--principal-color1);
 }
 .description{
     width: 80%;
@@ -159,6 +160,7 @@ button{cursor: pointer;}
     font-size: 30px;
     text-align: center;
     border-bottom: 3px solid var(--principal-color1);
+    color: var(--pricipal-color2);
 }
 .container_obj{
     display: grid;
@@ -192,9 +194,9 @@ button{cursor: pointer;}
 .linkline a{width: 300px;animation: linemove 2s infinite;}
 .img_line_top{width: 100%;}
 @keyframes linemove{
-    0%{transform: translateY(-10px);}
-    50%{transform: translateY(10px);box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.75);}
-    100%{transform: translateY(-10px); }
+    0%{transform: translateY(-10px);box-shadow:0 0 0 0 transparent;}
+    50%{transform: translateY(10px);box-shadow:0 12px 20px -12px #000;}
+    100%{transform: translateY(-10px); box-shadow:0 0 0 0 transparent;}
 }
 /*Hidden section*/
 #hidden{
@@ -255,9 +257,12 @@ button{cursor: pointer;}
 .button_font{
     border: none;
     padding: 5px;
+    width: 100px;
 }
 #cont_election{
     background-color: var(--transparent-hidden);
+    width: 100px;
+    padding: 5px;
 }
 .typefont{
     display: flex;

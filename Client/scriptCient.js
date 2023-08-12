@@ -76,6 +76,8 @@ let bodyBack=document.getElementById("body");
 let objPara=document.querySelectorAll("#objP");
 let navbar=document.getElementById("navbar");
 let titleSearch=document.getElementById("title_search");
+let presentation=document.getElementById("presentation");
+
 darkLink.addEventListener("click", ()=>{
     if(bodyBack.classList.contains("light")){
         bodyBack.classList.remove("light");
@@ -87,6 +89,8 @@ darkLink.addEventListener("click", ()=>{
             navbar.style.color="#fff";
             titleSearch.style.color="#fff";
           });
+          hidden.style.backgroundColor="rgba(114, 112, 115, 0.504)"
+          presentation.style.color="#fff";
     }
 })
 lightLink.addEventListener("click", ()=>{
@@ -96,6 +100,7 @@ lightLink.addEventListener("click", ()=>{
             objP.style.color="#000";
             navbar.style.backgroundColor="#000";
             titleSearch.style.color="#000";
+            presentation.style.color="#000";
           });
     } else{
         bodyBack.classList.add("light");

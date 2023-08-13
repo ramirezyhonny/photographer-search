@@ -85,12 +85,16 @@ darkLink.addEventListener("click", ()=>{
         bodyBack.classList.add("dark");
         objPara.forEach(objP => {
             objP.style.color="#fff";
-            navbar.style.backgroundColor="#a900ad";
+            navbar.style.backgroundColor="#181820";
             navbar.style.color="#fff";
             titleSearch.style.color="#fff";
+            
           });
-          hidden.style.backgroundColor="rgba(114, 112, 115, 0.504)"
-          presentation.style.color="#fff";
+          hidden.style.boxShadow="none"
+          hidden.style.backgroundColor="#181820";
+          hidden.style.color="#919499";
+          hidden.style.borderRadius="0";
+          presentation.style.color="#919499";
     }
 })
 lightLink.addEventListener("click", ()=>{
@@ -107,5 +111,6 @@ lightLink.addEventListener("click", ()=>{
         navbar.style.color="#fff";
     }
 })
+
 
 

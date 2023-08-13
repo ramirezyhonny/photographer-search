@@ -11,10 +11,11 @@ html{scroll-behavior: smooth;}
     --principal-color3:#fff;
     --principal-color4:#000;
     --transparent-hidden:rgba(55, 53, 56, 0.504);
-    --transparent-hidden-dark:rgba(114, 112, 115, 0.504);
+    --transparent-hidden-dark:#18182080;
+    --text-dark:#919499;
 }
 #body{font-family: 'Open Sans', sans-serif;}
-#body.dark{background-color: var(--principal-color4);}
+#body.dark{background-color: rgb(41, 44, 49);}
 #body.light{background-color: var(--principal-color3);}
     
 

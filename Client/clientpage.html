@@ -12,7 +12,7 @@
             <img src="/Sec1/Images/My project-1.png" alt="log" width="100px">
             <ul class="navbar_list">
                 <li><a href="#" class="navbar_list_link">Home</a></li>
-                <li><a href="#" class="navbar_list_link">My reservations</a></li>
+                <li><a href="#" class="navbar_list_link" id="reservation_link">My reservations</a></li>
                 <li><a href="#what_it_this" class="navbar_list_link">What it this?</a></li>
                 <li><a href="#" class="navbar_list_link" id="myperfil">My perfil</a></li>
             </ul>
@@ -104,13 +104,28 @@
                         </div>
                     </div>
                 </div>
+                <div class="info_user">
+                    <h2 class="title_info_user">Information</h2>
+                    <div class="section_dates">
+                        <div class="date"><p class="user_t">Type user:  <span class="span_date">Client</span></p></div>
+                        <div class="date"><p class="code_id">ID: <span class="span_date">12345</span></p></div>
+                        <div class="date"><p class="age">Age: <span class="span_date">20</span></p></div>
+                        <div class="date"><p class="email">Email: <span class="span_date">ramirezyhonny0@gmail.com</span></p></div>
+                        <div class="date"><p class="ph_num">Number Pho: <span class="span_date">2605385007</span></p></div>
+                        <div class="date"><p class="location">Location: <span class="span_date">Argentina, Mendoza, San Rafael</span></p></div>
+                    </div>
+                </div>
             </div>
-
+        </section>
+        <section id="reservations_section">
+            <div class="nav_close_button"><button id="close_reservation"><img src="/Client/images/close-svgrepo-com (1).svg" alt="pic close" class="svg_close_reservation"></button></div>
+            <h2 class="reservation_title">My reservations!</h2>
         </section>
     </main>
     <footer>
         <p>This page is realizated by a student from Argentina</p>
     </footer>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
     <script src="/Client/scriptCient.js"></script>
 </body>
 </html>

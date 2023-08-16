@@ -4,17 +4,10 @@ let hidden=document.getElementById("hidden");
 let closeHi=document.getElementById("but_clo_hi");
 let nameUser=document.getElementById("name_user");
 link.addEventListener("click", ()=>{
-    if(hidden.style.opacity==="0" && hidden.style.display==="none"){
         hidden.style.opacity="1";
         hidden.style.display="block";
         hidden.style.animation="hid 0.5s forwards"
         nameUser.style.animation="namuser 2s forwards"
-    } else{
-        hidden.style.opacity="0";
-        hidden.style.display="none";
-        hidden.style.animation=false;
-        nameUser.style.animation=false;
-    };
 });
 closeHi.addEventListener("click", ()=>{
     if(hidden.style.opacity==="1" && hidden.style.display==="block"){
@@ -106,10 +99,32 @@ lightLink.addEventListener("click", ()=>{
             titleSearch.style.color="#000";
             presentation.style.color="#000";
           });
+        hidden.style.borderRadius="20px 0 0 20px";
+        hidden.style.backgroundColor="rgba(55, 53, 56, 0.504)";
+        hidden.style.color="#000";
+        hidden.style.boxShadow="0 0 20px 0";
     } else{
         bodyBack.classList.add("light");
         navbar.style.color="#fff";
     }
+})
+//Reservations scrip
+let linkReservation=document.getElementById("reservation_link");
+let contReservation=document.getElementById("reservations_section");
+let cancelContR=document.getElementById("close_reservation");
+let modalBackdrop=document.getElementById("modalBackdrop");
+let fBody=document.getElementsByName("body");
+linkReservation.addEventListener("click", ()=>{
+    setTimeout(()=>{
+        contReservation.style.display="block";
+        modalBackdrop.style.display="block";
+        fBody.classList.add("blur-background");
+    },300);
+});
+cancelContR.addEventListener("click",()=>{
+    contReservation.style.display="none";
+    fBody.classList.remove("blur-background");
+    
 })
 
 
